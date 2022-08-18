@@ -1,12 +1,13 @@
-import { useEffect, useState } from "react";
+
 import useFetch from "./useFetch";
 
 // components
 import WorkoutDetails from '../components/WorkoutDetails'
 import WorkoutForm from "../components/WorkoutForm";
+
  const Home = () => {
 
-
+    
     const { workouts } = useFetch('/api/workouts')
     return ( 
         <div className="home">
